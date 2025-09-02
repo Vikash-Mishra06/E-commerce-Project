@@ -20,20 +20,47 @@
       "email": "vicky1@me.com",
       "password": "123456",
       "isAdmin": false
+    },
+    {
+      "id": "bDkW5axvBAxfck-LuM826",
+      "username": "Vicky2",
+      "email": "vicky2@me.com",
+      "password": "123456",
+      "isAdmin": false
     }
   ],
   "products": [
     {
-      "id": "1",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "id": "L3e2mHSelP2oYki2hAU2l",
+      "image": "https://imgs.search.brave.com/zlf2VFXPZgEtBBlEpzCZbM3-N-aTTpy-oaB2gFFUfsQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDIzLzA3L2JsdWV0/b290aGhlYWRwaG9u/ZXMtMjA0OHB4LTYx/NDEuanBnP2F1dG89/d2VicCZxdWFsaXR5/PTc1JndpZHRoPTEw/MjQ",
+      "title": "Bluetooth Headphone",
+      "price": "1234",
+      "category": "Electronics",
+      "description": "High-quality over-ear headphones with noise cancellation and 20 hours of battery life."
+    },
+    {
+      "id": "r5gZrIrdF3V5YhDPsi4-p",
+      "image": "https://imgs.search.brave.com/Us8p1sKXzKan-SbthaFzUP5PV1SjLC0HlVDNEljZF8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym93ZXJzd2lsa2lu/cy5jb20vZHcvaW1h/Z2UvdjIvQkdKSF9Q/UkQvb24vZGVtYW5k/d2FyZS5zdGF0aWMv/LS9MaWJyYXJ5LVNp/dGVzLWJvd2Vyc19u/b3J0aGFtZXJpY2Ff/c2hhcmVkL2RlZmF1/bHQvZHc1NGY1YjI5/YS9DYXRlZ29yeS9I/ZWFkcGhvbmVzL2hl/YWRwaG9uZXNfMy1j/b2wtY2Fyb3VzZWxf/aGVhZHBob25lcy5q/cGc_c3c9NzY4",
+      "title": "Bluetooth Headphone",
+      "price": "1122",
+      "category": "Electronics",
+      "description": "Bluetooth Headphone"
+    },
+    {
+      "id": "_Lr7EGuNoT9qEDlcaI4r8",
+      "image": "https://m.media-amazon.com/images/I/41lArSiD5hL._AC_SL1200_.jpg",
+      "title": "Sony WH-CH520",
+      "price": "5313",
+      "category": " Wireless Headphones Bluetooth",
+      "description": "On-Ear Headset with Microphone and up to 50 Hours Battery Life with Quick Charging, Black"
+    },
+    {
+      "id": "PgbCl7BhCEpax52s520FI",
+      "image": "https://m.media-amazon.com/images/I/61EL2AKKcBL._AC_SL1500_.jpg",
+      "title": "JBL Tune 720BT",
+      "price": "4999",
+      "category": "Wireless Over-Ear Headphones",
+      "description": "JBL Pure Bass Sound, Bluetooth 5.3, Up to 76H Battery Life and Speed Charge, Lightweight, Comfortable"
     }
   ],
   "cart": []

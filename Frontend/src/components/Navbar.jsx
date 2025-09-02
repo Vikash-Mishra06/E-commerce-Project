@@ -1,14 +1,35 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = (user) => {
   return (
-    <nav className='flex justify-center items-center gap-x-10 p-5 text-lg '>
-        <NavLink className="hover:underline" to={"/"}>Home</NavLink>
-        <NavLink className="hover:underline" to={"/products"}>Products</NavLink>
-        <NavLink className="hover:underline" to={"/login"}>Login</NavLink>
-    </nav>
-  )
-}
+    <nav className="flex justify-center items-center gap-x-10 p-5 text-lg ">
+      <NavLink className={({ isActive }) =>
+        `hover:underline ${isActive ? "text-red-400 underline" : ""}`
+      } to={"/"}>Home</NavLink>
+      <NavLink className={({ isActive }) =>
+        `hover:underline ${isActive ? "text-red-400 underline" : ""}`
+      } to={"/products"}>Products</NavLink>
+      {user ? (
+        <>
+          <NavLink className={({ isActive }) =>
+            `hover:underline ${isActive ? "text-red-400 underline" : ""}`
+          } to={"/admin/create-product"}>Create Product</NavLink>
+          <NavLink className={({ isActive }) =>
+            `hover:underline ${isActive ? "text-red-400 underline" : ""}`
+          } to={"/logout"}>Logout</NavLink>
 
-export default Navbar
+        </>
+
+      ) : (
+        <>
+          <NavLink className={({ isActive }) =>
+            `hover:underline ${isActive ? "text-red-400" : ""}`
+          } to={"/login"}>Login</NavLink>
+        </>
+      )}
+    </nav>
+  );
+};
+
+export default Navbar;
