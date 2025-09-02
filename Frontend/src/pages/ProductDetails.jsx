@@ -7,9 +7,10 @@ import { toast } from 'react-toastify'
 
 const ProductDetails = () => {
   const { id } = useParams()
-  const products = useSelector((state) => state.productsReducer.products)
+  
+  const { productsReducer: { products }, usersReducer: { users } } = useSelector((state) => state)
   const product = products?.find((product) => product.id == id)
-  console.log(product)
+
 
   const { register, reset, handleSubmit } = useForm({
     defaultValues: {
@@ -33,7 +34,7 @@ const ProductDetails = () => {
     toast.success("Product Deleted")
   }
 
-  return product ?(
+  return product ? (
     <>
       <h1 className="text-center text-5xl mt-5">Product Details</h1>
       <div className='flex items-center justify-between gap-5 -mt-7'>
@@ -68,7 +69,7 @@ const ProductDetails = () => {
       </div>
       <br />
       <hr />
-
+      {users && users?.isAdmin && 
       <div className='flex items-center justify-center flex-col p-8 gap-2'>
         <h1 className='text-5xl pb-4'>Update Product</h1>
         <form onSubmit={handleSubmit(UpdateProductHandler)} className='flex flex-col w-1/2 border-1 p-10 rounded-xl bg-transparent'>
@@ -80,6 +81,9 @@ const ProductDetails = () => {
           <button className='text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.02] border-1 text-xl py-2 text-center rounded-xl pb-2'>Update Product</button>
         </form>
       </div>
+      }
+
+      
     </>
   ) : (
     "Loading"

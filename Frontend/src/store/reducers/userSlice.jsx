@@ -11,8 +11,12 @@ const usersSlice = createSlice({
         loaduser: (state, action) => {
             state.users = action.payload;
         },
+        logout: (state) => {
+      state.users = null; // clear user when logging out
+      localStorage.removeItem("user"); // optional: clear from localStorage
+    },
     },
 });
 
 export default usersSlice.reducer
-export const { loaduser } = usersSlice.actions
+export const { loaduser, logout  } = usersSlice.actions

@@ -61,6 +61,38 @@
       "price": "4999",
       "category": "Wireless Over-Ear Headphones",
       "description": "JBL Pure Bass Sound, Bluetooth 5.3, Up to 76H Battery Life and Speed Charge, Lightweight, Comfortable"
+    },
+    {
+      "id": "ONwEjjSFIkBfaVTFNcTAY",
+      "image": "https://m.media-amazon.com/images/I/71zuMSjwDfL._AC_SL1500_.jpg",
+      "title": "ASUS ROG Strix G16",
+      "price": "15000",
+      "category": "Gaming Laptop",
+      "description": "16” FHD+ 16:10 165Hz/3ms Display, NVIDIA® GeForce RTX™ 5060 Laptop GPU, Intel® Core™ i7 Processor 14650HX, 16GB"
+    },
+    {
+      "id": "WglBCI3qiX_7JrVVJj3Z1",
+      "image": "https://m.media-amazon.com/images/I/711P2GOadBL._AC_SL1500_.jpg",
+      "title": "CyberPowerPC Gamer Xtreme",
+      "price": "1499",
+      "category": "VR Gaming PC",
+      "description": "Intel Core i7-14700F 2.1GHz, GeForce RTX 5060 Ti 16GB, 16GB DDR5, 1TB PCIe 4.0 SSD, WiFi Ready & Windows 11 Home"
+    },
+    {
+      "id": "2QeOKInhO_evxGFbZdk1u",
+      "image": "https://m.media-amazon.com/images/I/61okhLEYFvL._AC_SL1500_.jpg",
+      "title": " GIGABYTE AERO X16",
+      "price": "16000",
+      "category": "Gaming Laptop",
+      "description": "Copilot+ PC - 165Hz 2560x1600 WQXGA - NVIDIA GeForce RTX 5070 - AMD Ryzen AI 9 HX 370-1TB SSD with 32GB DDR5 RAM - Windows 11 Home"
+    },
+    {
+      "id": "VWmvVmhD_sV2NX6Czr3WL",
+      "image": "https://m.media-amazon.com/images/I/615KnbjRmTL._SL1500_.jpg",
+      "title": " Xbox Wireless Gaming Controller ",
+      "price": "1100",
+      "category": "Gaming Console",
+      "description": "(2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV Sticks, Smart TVs, VR Headsets"
     }
   ],
   "cart": []
