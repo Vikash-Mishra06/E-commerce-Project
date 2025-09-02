@@ -2,13 +2,14 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
 import { logout } from "../store/reducers/userSlice";
+import { asynclogoutuser } from "../store/actions/userActions";
 
 const Navbar = (user) => {
   const users = useSelector((state) => state.userReducer?.user)
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const handleLogout = () => {
-    dispatch(logout());
+    dispatch(asynclogoutuser());
     navigate("/login"); // redirect to login page
   };
 

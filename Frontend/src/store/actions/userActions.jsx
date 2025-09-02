@@ -1,6 +1,6 @@
 import { toast } from "react-toastify"
 import axios from './../../api/AxiosConfig'
-import { loaduser } from "../reducers/userSlice"
+import { loaduser, logout } from "../reducers/userSlice"
 
 export const asynccurrentuser = () => async (dispatch, getState) => {
     try {
@@ -15,6 +15,7 @@ export const asynccurrentuser = () => async (dispatch, getState) => {
 export const asynclogoutuser = () => async (dispatch, getState) => {
     try {
         localStorage.removeItem("user")
+        dispatch(logout())
         toast.success("User Logout!")
     } catch (error) {
         toast.error("Invaild Credentials")
