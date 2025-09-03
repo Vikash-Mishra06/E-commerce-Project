@@ -35,11 +35,11 @@ const Products = () => {
         </div>
 
         <h1 className="text-xl pb-2 font-thin">
-          <span className="text-red-400 font-medium">Title: </span>{product.title}
+          <span className="text-red-400 font-medium">Title: </span>{product.title.slice(0, 20)}...
         </h1>
         <h1 className="text-xl pb-2 font-thin">
           <span className="text-red-400 font-medium">Description: </span>
-          {product.description.slice(0, 20)}...
+          {product.description.slice(0, 18)}...
         </h1>
         <p className="text-xl pb-2 font-thin">
           <span className="text-red-400 font-medium">Price: </span>${product.price}
