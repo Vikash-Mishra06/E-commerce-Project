@@ -42,15 +42,15 @@ export const asyncregisteruser = (user) => async (dispatch, getState) => {
     }
 }
 
-export const asyncupdateuser = (id, user) => async (dispatch, getState) => {
-    try {
-        const { data } = await axios.patch("/users/" + id, user)
-        localStorage.setItem("user", JSON.stringify(data))
-
-    } catch (error) {
-        toast.error("Invaild Credentials")
-    }
-}
+export const asyncupdateuser = (id, user) => async (dispatch) => {
+  try {
+    const { data } = await axios.put("/users/" + id, user); // ✅ replace full user
+    localStorage.setItem("user", JSON.stringify(data));
+    dispatch(loaduser(data));
+  } catch (error) {
+    toast.error("Failed to update user");
+  }
+};
 
 
 export const asyncdeleteuser = (id) => async (dispatch, getState) => {

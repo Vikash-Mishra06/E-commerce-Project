@@ -5,21 +5,29 @@
       "username": "Vikas",
       "email": "vikas@me.com",
       "password": "123456",
-      "isAdmin": true
+      "isAdmin": true,
+      "cart": [
+        {
+          "productId": "L3e2mHSelP2oYki2hAU2l",
+          "quantity": 6
+        }
+      ]
     },
     {
       "id": "kNPIXbeLyXfVZ85PFjCwn",
       "username": "Vicky",
       "email": "vicky@me.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     },
     {
       "id": "K7uA73rMLV9rYa1JeIr38",
       "username": "Vicky1",
       "email": "vicky1@me.com",
       "password": "123456",
-      "isAdmin": false
+      "isAdmin": false,
+      "cart": []
     }
   ],
   "products": [
@@ -88,5 +96,11 @@
       "description": "(2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV Sticks, Smart TVs, VR Headsets"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "productId": "1",
+      "quantity": 1,
+      "id": "7580"
+    }
+  ]
 }

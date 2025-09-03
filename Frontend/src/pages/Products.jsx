@@ -3,21 +3,43 @@ import { useDispatch, useSelector } from "react-redux"
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { asyncdeleteproduct } from '../store/actions/productActions'
 import { toast } from 'react-toastify'
+import { asyncupdateuser } from '../store/actions/userActions'
 
 const Products = () => {
-  const products = useSelector((state) => state.productsReducer.products) || []
+  const dispatch = useDispatch()
+  // const products = useSelector((state) => state.productsReducer.products) || []
+  const {usersReducer: {users}, productsReducer: {products}} = useSelector((state) => state)
   const { id } = useParams()
 
+const AddtoCartHandler = (id) => {
+  const copyuser = { ...users, cart: [...(users?.cart || [])] };
+
+  const x = copyuser.cart.findIndex((c) => c.productId === id);
+
+  if (x === -1) {
+    copyuser.cart.push({ productId: id, quantity: 1 });
+  } else {
+    copyuser.cart[x] = {
+      ...copyuser.cart[x],
+      quantity: copyuser.cart[x].quantity + 1,
+    };
+  }
+
+  console.log("Updated cart before dispatch:", copyuser.cart);
+
+  dispatch(asyncupdateuser(copyuser.id, copyuser));
+  toast.success("Added to Cart");
+};
+
+
+
   const navigate = useNavigate()
-  const dispatch = useDispatch()
 
   const DeleteHandler = (id) => {
     dispatch(asyncdeleteproduct(id))
     navigate("/products")
     toast.success("Product Deleted")
   }
-
-
 
   const renderproduct = products.map((product) => {
     return product ? (
@@ -45,7 +67,7 @@ const Products = () => {
           <span className="text-red-400 font-medium">Price: </span>${product.price}
         </p>
         <div className="flex justify-between gap-5">
-          <button className="text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">
+          <button onClick={() => AddtoCartHandler(product.id)} className="text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">
             Add to Cart <i className="ri-shopping-cart-line"></i>
           </button>
           <button onClick={() => DeleteHandler(product.id)} type='button' className=" text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">Remove <i className="ri-delete-bin-line"></i></button>

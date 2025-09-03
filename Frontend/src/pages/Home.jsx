@@ -31,7 +31,7 @@ const Home = () => {
 
       {/* Featured Products */}
       <section className="mb-12 ">
-        <h2 className="text-4xl text-center font-semibold mb-8">
+        <h2 className="text-5xl text-center font-semibold mb-8">
           Featured Products
         </h2>
         <Products />
@@ -39,7 +39,7 @@ const Home = () => {
 
       {/* Categories Section */}
       <section className="mb-12 ">
-        <h2 className="text-4xl text-center font-semibold mb-8">Shop by Category</h2>
+        <h2 className="text-5xl text-center font-semibold mb-8">Shop by Category</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {["Electronics", "Clothing", "Accessories", "Home"].map((cat) => (
             <div

@@ -19,7 +19,7 @@ const CreateProduct = () => {
   }
   return (
     <div className='flex items-center justify-center flex-col p-8 gap-2'>
-      <h1 className='text-4xl pb-4'>Create Product</h1>
+      <h1 className='text-5xl pb-4'>Create Product</h1>
       <form onSubmit={handleSubmit(CreateProductHandler)} className='flex flex-col w-1/2 border-1 p-10 rounded-xl bg-transparent'>
         <input {...register("image")} className='outline-0 border-b p-4 text-xl ' type="url" placeholder='Enter ImageURL' />
         <input {...register("title")} className='outline-0 border-b p-4 text-xl ' type="text" placeholder='Enter Title' />

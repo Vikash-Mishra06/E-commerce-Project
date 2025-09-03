@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     dispatch(asynccurrentuser())
     dispatch(asyncloadproduct())
-  },[])
+  },[dispatch])
   return (
     <div className=' bg-[#1F1C2C] w-screen h-screen font-medium text-[#918DA9]'>
   <Navbar />

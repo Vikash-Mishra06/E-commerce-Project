@@ -12,6 +12,7 @@ const Register = () => {
   const registerHandler = (user) => {
     user.id = nanoid()
     user.isAdmin = false
+    user.cart = []
     dispatch(asyncregisteruser(user))
     navigate("/login")
     reset()

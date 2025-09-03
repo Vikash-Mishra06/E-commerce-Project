@@ -20,11 +20,10 @@ const Navbar = (user) => {
         <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/admin/create-product"}>Create Product</NavLink>
         <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/admin/user-profile"}>Profile</NavLink>
 
-
       {user ? (
         <button
           onClick={handleLogout}
-          className="bg-red-500 text-white px-4 py-1 rounded"
+          className="bg-red-500 text-white px-4 py-1 rounded hover:scale-105"
         >
           Logout
         </button>
