@@ -24,7 +24,7 @@ export const asynclogoutuser = () => async (dispatch, getState) => {
 
 export const asyncloginuser = (user) => async (dispatch, getState) => {
     try {
-        const {data} = await axios.get(`/users?email=${user.email}&password=${user.password}`)
+        const { data } = await axios.get(`/users?email=${user.email}&password=${user.password}`)
         localStorage.setItem("user", JSON.stringify(data[0]))
         toast.success("LoggedIn Successfully")
     } catch (error) {
@@ -42,13 +42,24 @@ export const asyncregisteruser = (user) => async (dispatch, getState) => {
     }
 }
 
-export const asyncupdateuser = (user) => async (dispatch, getState) => {
+export const asyncupdateuser = (id, user) => async (dispatch, getState) => {
     try {
-        const {data} = await axios.patch("/users", user)
-        localStorage.setItem("user", JSON.stringify(data[0]))
-        toast.success("User Updated")
+        const { data } = await axios.patch("/users/" + id, user)
+        localStorage.setItem("user", JSON.stringify(data))
 
     } catch (error) {
         toast.error("Invaild Credentials")
     }
 }
+
+
+export const asyncdeleteuser = (id) => async (dispatch, getState) => {
+  try {
+    await axios.delete("/users/" + id);
+
+    localStorage.removeItem("user");
+    dispatch(logout()); // optional: clears redux user state
+  } catch (error) {
+    toast.error("Failed to delete user");
+  }
+};

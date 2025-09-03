@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "Ot9sM3ktAReS9TTA0WR2H",
-      "username": "vikas",
+      "username": "Vikas",
       "email": "vikas@me.com",
       "password": "123456",
       "isAdmin": true
@@ -18,13 +18,6 @@
       "id": "K7uA73rMLV9rYa1JeIr38",
       "username": "Vicky1",
       "email": "vicky1@me.com",
-      "password": "123456",
-      "isAdmin": false
-    },
-    {
-      "id": "bDkW5axvBAxfck-LuM826",
-      "username": "Vicky2",
-      "email": "vicky2@me.com",
       "password": "123456",
       "isAdmin": false
     }
