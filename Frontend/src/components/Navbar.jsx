@@ -18,6 +18,8 @@ const Navbar = (user) => {
       <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/"}>Home</NavLink>
       <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/products"}>Products</NavLink>
         <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/admin/create-product"}>Create Product</NavLink>
+        <NavLink className={({ isActive }) => `hover:underline ${isActive ? "text-red-400 underline" : ""}`} to={"/admin/user-profile"}>Profile</NavLink>
+
 
       {user ? (
         <button

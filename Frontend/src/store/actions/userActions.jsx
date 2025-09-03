@@ -41,3 +41,14 @@ export const asyncregisteruser = (user) => async (dispatch, getState) => {
         toast.error("Invaild Credentials")
     }
 }
+
+export const asyncupdateuser = (user) => async (dispatch, getState) => {
+    try {
+        const {data} = await axios.patch("/users", user)
+        localStorage.setItem("user", JSON.stringify(data[0]))
+        toast.success("User Updated")
+
+    } catch (error) {
+        toast.error("Invaild Credentials")
+    }
+}

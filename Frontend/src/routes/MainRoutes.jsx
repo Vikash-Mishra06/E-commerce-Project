@@ -5,8 +5,9 @@ import Products from './../pages/Products'
 import Login from './../pages/Login'
 import Register from './../pages/Register'
 import CreateProduct from './../pages/admin/CreateProduct'
-import Logout from '../pages/user/Logout'
 import ProductDetails from '../pages/productDetails'
+import UserProfile from '../pages/user/UserProfile'
+
 
 
 const MainRoutes = () => {
@@ -15,10 +16,10 @@ const MainRoutes = () => {
         <Route path='/' element={<Home />} />
         <Route path='/products' element={<Products />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/logout' element={<Logout />} />
         <Route path='/register' element={<Register />} />
 
         <Route path='/admin/create-product' element={<CreateProduct />} />
+        <Route path='/admin/user-profile' element={<UserProfile />} />
         <Route path='/product/:id' element={<ProductDetails />} />
 
     </Routes>
