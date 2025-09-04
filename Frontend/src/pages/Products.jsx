@@ -7,27 +7,29 @@ import { asyncupdateuser } from '../store/actions/userActions'
 
 const Products = () => {
   const dispatch = useDispatch()
-  // const products = useSelector((state) => state.productsReducer.products) || []
-  const {usersReducer: {users}, productsReducer: {products}} = useSelector((state) => state)
+  const products = useSelector((state) => state.productsReducer.products) || []
+  const users = useSelector((state) => state.usersReducer.users) || []
+
+  // const {usersReducer: {users}, productsReducer: {products}} = useSelector((state) => state)
   const { id } = useParams()
 
-const AddtoCartHandler = (id) => {
-  const copyuser = { ...users, cart: [...(users?.cart || [])] };
+const AddtoCartHandler = (product) => {
+  const copyuser = { ...users, cart: [...(users?.cart) || [] ] };
 
-  const x = copyuser.cart.findIndex((c) => c.productId === id);
+  const x = copyuser.cart.findIndex((c) => c?.product?.id === product.id);
 
   if (x === -1) {
-    copyuser.cart.push({ productId: id, quantity: 1 });
+    copyuser.cart.push({ product, quantity: 1 });
   } else {
     copyuser.cart[x] = {
       ...copyuser.cart[x],
       quantity: copyuser.cart[x].quantity + 1,
     };
   }
+  dispatch(asyncupdateuser(copyuser.id, copyuser));
 
   console.log("Updated cart before dispatch:", copyuser.cart);
 
-  dispatch(asyncupdateuser(copyuser.id, copyuser));
   toast.success("Added to Cart");
 };
 
@@ -43,7 +45,7 @@ const AddtoCartHandler = (id) => {
 
   const renderproduct = products.map((product) => {
     return product ? (
-      <div className="w-[23%] border p-3 rounded-lg bg-[#1F1C2C] text-white ">
+      <div key={product.id} className="w-[23%] border p-3 rounded-lg bg-[#1F1C2C] text-white ">
         <div className="relative w-full h-48 overflow-hidden rounded mb-2">
           <img
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
@@ -67,7 +69,7 @@ const AddtoCartHandler = (id) => {
           <span className="text-red-400 font-medium">Price: </span>${product.price}
         </p>
         <div className="flex justify-between gap-5">
-          <button onClick={() => AddtoCartHandler(product.id)} className="text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">
+          <button onClick={() => AddtoCartHandler(product)} className="text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">
             Add to Cart <i className="ri-shopping-cart-line"></i>
           </button>
           <button onClick={() => DeleteHandler(product.id)} type='button' className=" text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">Remove <i className="ri-delete-bin-line"></i></button>

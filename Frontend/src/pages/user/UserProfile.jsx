@@ -6,13 +6,12 @@ import { asyncdeleteuser, asyncupdateuser } from '../../store/actions/userAction
 import { toast } from 'react-toastify'
 
 const UserProfile = () => {
-  // ✅ make sure this matches your store setup
-const { usersReducer: { users } } = useSelector((state) => state)
+// const { usersReducer: { users } } = useSelector((state) => state)
+  const users = useSelector((state) => state.usersReducer.users) || []
   const { register, reset, handleSubmit } = useForm()
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  // ✅ reset form when users changes
   useEffect(() => {
     if (users) {
       reset({

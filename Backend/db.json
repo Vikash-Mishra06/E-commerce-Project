@@ -6,12 +6,7 @@
       "email": "vikas@me.com",
       "password": "123456",
       "isAdmin": true,
-      "cart": [
-        {
-          "productId": "L3e2mHSelP2oYki2hAU2l",
-          "quantity": 6
-        }
-      ]
+      "cart": []
     },
     {
       "id": "kNPIXbeLyXfVZ85PFjCwn",
@@ -96,11 +91,5 @@
       "description": "(2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV Sticks, Smart TVs, VR Headsets"
     }
   ],
-  "cart": [
-    {
-      "productId": "1",
-      "quantity": 1,
-      "id": "7580"
-    }
-  ]
+  "cart": []
 }

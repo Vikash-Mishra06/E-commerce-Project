@@ -7,6 +7,7 @@ import Register from './../pages/Register'
 import CreateProduct from './../pages/admin/CreateProduct'
 import ProductDetails from '../pages/productDetails'
 import UserProfile from '../pages/user/UserProfile'
+import Cart from '../pages/user/Cart'
 
 
 
@@ -21,6 +22,8 @@ const MainRoutes = () => {
         <Route path='/admin/create-product' element={<CreateProduct />} />
         <Route path='/admin/user-profile' element={<UserProfile />} />
         <Route path='/product/:id' element={<ProductDetails />} />
+        <Route path='/user/cart' element={<Cart />} />
+
 
     </Routes>
   )

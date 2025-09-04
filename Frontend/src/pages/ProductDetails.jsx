@@ -8,9 +8,10 @@ import { toast } from 'react-toastify'
 const ProductDetails = () => {
   const { id } = useParams()
   
-  const { productsReducer: { products }, usersReducer: { users } } = useSelector((state) => state)
+  // const { productsReducer: { products }, usersReducer: { users } } = useSelector((state) => state)
+  const products = useSelector((state) => state.productsReducer.products) || []
+  const users = useSelector((state) => state.usersReducer.users) || []
   const product = products?.find((product) => product.id == id)
-
 
   const { register, reset, handleSubmit } = useForm({
     defaultValues: {
