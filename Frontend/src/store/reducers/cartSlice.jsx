@@ -12,6 +12,7 @@ const cartsSlice = createSlice({
             state.carts = action.payload;
         },
     },
+    
 });
 
 export default cartsSlice.reducer

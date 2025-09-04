@@ -6,7 +6,41 @@
       "email": "vikas@me.com",
       "password": "123456",
       "isAdmin": true,
-      "cart": []
+      "cart": [
+        {
+          "product": {
+            "id": "r5gZrIrdF3V5YhDPsi4-p",
+            "image": "https://imgs.search.brave.com/Us8p1sKXzKan-SbthaFzUP5PV1SjLC0HlVDNEljZF8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym93ZXJzd2lsa2lu/cy5jb20vZHcvaW1h/Z2UvdjIvQkdKSF9Q/UkQvb24vZGVtYW5k/d2FyZS5zdGF0aWMv/LS9MaWJyYXJ5LVNp/dGVzLWJvd2Vyc19u/b3J0aGFtZXJpY2Ff/c2hhcmVkL2RlZmF1/bHQvZHc1NGY1YjI5/YS9DYXRlZ29yeS9I/ZWFkcGhvbmVzL2hl/YWRwaG9uZXNfMy1j/b2wtY2Fyb3VzZWxf/aGVhZHBob25lcy5q/cGc_c3c9NzY4",
+            "title": "Bluetooth Headphone",
+            "price": "1122",
+            "category": "Electronics",
+            "description": "Bluetooth Headphone"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "PgbCl7BhCEpax52s520FI",
+            "image": "https://imgs.search.brave.com/KAI3CDtPSCiFeclotTrnEVVQgQ_FehSWOCeSSLntDAI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2Nzk1MTM2/OTE0ODUtNzExZDAz/MGY3ZTk0P2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE9Y/eDhhR1ZoWkhCb2Iy/NWxmR1Z1ZkRCOGZE/QjhmSHd3",
+            "title": "JBL Tune 720BT",
+            "price": "4999",
+            "category": "Wireless Over-Ear Headphones",
+            "description": "JBL Pure Bass Sound, Bluetooth 5.3, Up to 76H Battery Life and Speed Charge, Lightweight, Comfortable"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "o0e7o31G-qEcwRSb8XWwO",
+            "image": "https://imgs.search.brave.com/05ncgppJwC4XPPE2WmLDDuGQ5vlvgV-_ZaFkyXT4ysA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMy8x/MC8wNy8xNC8yNC9z/bWFydHdhdGNoLTgz/MDAyMzhfNjQwLmpw/Zw",
+            "title": "Noise Icon 2 1.8",
+            "price": "1399",
+            "category": "Smartwatch",
+            "description": "Display with Bluetooth Calling, Women's Edition, AI Voice Assistant Smartwatch  (Beige Strap, Regular)"
+          },
+          "quantity": 1
+        }
+      ]
     },
     {
       "id": "kNPIXbeLyXfVZ85PFjCwn",
@@ -27,14 +61,6 @@
   ],
   "products": [
     {
-      "id": "L3e2mHSelP2oYki2hAU2l",
-      "image": "https://imgs.search.brave.com/zlf2VFXPZgEtBBlEpzCZbM3-N-aTTpy-oaB2gFFUfsQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dGhld2lyZWN1dHRl/ci5jb20vd3AtY29u/dGVudC9tZWRpYS8y/MDIzLzA3L2JsdWV0/b290aGhlYWRwaG9u/ZXMtMjA0OHB4LTYx/NDEuanBnP2F1dG89/d2VicCZxdWFsaXR5/PTc1JndpZHRoPTEw/MjQ",
-      "title": "Bluetooth Headphone",
-      "price": "1234",
-      "category": "Electronics",
-      "description": "High-quality over-ear headphones with noise cancellation and 20 hours of battery life."
-    },
-    {
       "id": "r5gZrIrdF3V5YhDPsi4-p",
       "image": "https://imgs.search.brave.com/Us8p1sKXzKan-SbthaFzUP5PV1SjLC0HlVDNEljZF8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym93ZXJzd2lsa2lu/cy5jb20vZHcvaW1h/Z2UvdjIvQkdKSF9Q/UkQvb24vZGVtYW5k/d2FyZS5zdGF0aWMv/LS9MaWJyYXJ5LVNp/dGVzLWJvd2Vyc19u/b3J0aGFtZXJpY2Ff/c2hhcmVkL2RlZmF1/bHQvZHc1NGY1YjI5/YS9DYXRlZ29yeS9I/ZWFkcGhvbmVzL2hl/YWRwaG9uZXNfMy1j/b2wtY2Fyb3VzZWxf/aGVhZHBob25lcy5q/cGc_c3c9NzY4",
       "title": "Bluetooth Headphone",
@@ -43,16 +69,8 @@
       "description": "Bluetooth Headphone"
     },
     {
-      "id": "_Lr7EGuNoT9qEDlcaI4r8",
-      "image": "https://m.media-amazon.com/images/I/41lArSiD5hL._AC_SL1200_.jpg",
-      "title": "Sony WH-CH520",
-      "price": "5313",
-      "category": " Wireless Headphones Bluetooth",
-      "description": "On-Ear Headset with Microphone and up to 50 Hours Battery Life with Quick Charging, Black"
-    },
-    {
       "id": "PgbCl7BhCEpax52s520FI",
-      "image": "https://m.media-amazon.com/images/I/61EL2AKKcBL._AC_SL1500_.jpg",
+      "image": "https://imgs.search.brave.com/KAI3CDtPSCiFeclotTrnEVVQgQ_FehSWOCeSSLntDAI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2Nzk1MTM2/OTE0ODUtNzExZDAz/MGY3ZTk0P2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE9Y/eDhhR1ZoWkhCb2Iy/NWxmR1Z1ZkRCOGZE/QjhmSHd3",
       "title": "JBL Tune 720BT",
       "price": "4999",
       "category": "Wireless Over-Ear Headphones",
@@ -68,11 +86,11 @@
     },
     {
       "id": "WglBCI3qiX_7JrVVJj3Z1",
-      "image": "https://m.media-amazon.com/images/I/711P2GOadBL._AC_SL1500_.jpg",
-      "title": "CyberPowerPC Gamer Xtreme",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/z/l/b/rma-2306-realme-original-imahe6hbzzzgkanp.jpeg?q=70",
+      "title": "realme Buds T110",
       "price": "1499",
-      "category": "VR Gaming PC",
-      "description": "Intel Core i7-14700F 2.1GHz, GeForce RTX 5060 Ti 16GB, 16GB DDR5, 1TB PCIe 4.0 SSD, WiFi Ready & Windows 11 Home"
+      "category": "Bluetooth Ear Buds",
+      "description": "(RMA2306) with AI ENC for calls, 38 hours of Playback and Deep Bass Bluetooth  (Punk Black, True Wireless)"
     },
     {
       "id": "2QeOKInhO_evxGFbZdk1u",
@@ -89,6 +107,22 @@
       "price": "1100",
       "category": "Gaming Console",
       "description": "(2025) – Carbon Black – Play on Xbox, Windows, Android, iOS, FireTV Sticks, Smart TVs, VR Headsets"
+    },
+    {
+      "id": "o0e7o31G-qEcwRSb8XWwO",
+      "image": "https://imgs.search.brave.com/05ncgppJwC4XPPE2WmLDDuGQ5vlvgV-_ZaFkyXT4ysA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMy8x/MC8wNy8xNC8yNC9z/bWFydHdhdGNoLTgz/MDAyMzhfNjQwLmpw/Zw",
+      "title": "Noise Icon 2 1.8",
+      "price": "1399",
+      "category": "Smartwatch",
+      "description": "Display with Bluetooth Calling, Women's Edition, AI Voice Assistant Smartwatch  (Beige Strap, Regular)"
+    },
+    {
+      "id": "rFSbk7R6niDH2b-dXHLFU",
+      "image": "https://imgs.search.brave.com/AFe5d5QtIV5oSzXW3dQZgKRTNAE2_PPhYSmcEZrDivs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/bW9zLmNtcy5mdXR1/cmVjZG4ubmV0L2JU/OWNZQ1dTbTNIRFZt/Qm1YZFp0S2ouanBn",
+      "title": "Fire-Boltt Rise ",
+      "price": "1499",
+      "category": "Smartwatch ",
+      "description": "Bluetooth Calling 47mm (1.85), Metal Bod & Rotating Crown, 123 Sports Smartwatch  (Grey Strap, Free Size)"
     }
   ],
   "cart": []

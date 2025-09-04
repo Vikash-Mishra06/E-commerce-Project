@@ -43,7 +43,6 @@ const Cart = () => {
               <button  onClick={() => RemoveCartHandler(c.productId || c.product.id)} className="text-[#1F1C2C] bg-[#918DA9] hover:scale-[1.03] text-lg py-2 px-4 text-center rounded-xl mt-2">
                 Remove <i className="ri-delete-bin-line"></i>
               </button>
-    
             </div>
           </div>
     
