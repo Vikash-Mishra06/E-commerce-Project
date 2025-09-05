@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +16,10 @@ const ProductDetails = () => {
   const products = useSelector((state) => state.productsReducer.products) || [];
   const users = useSelector((state) => state.usersReducer.users) || [];
   const product = products?.find((product) => product.id == id);
+
+  // useEffect(() => {
+  //   users?.isAdmin == true && dispatch(asyncupdateproduct(id, product));
+  // })
 
   const { register, reset, handleSubmit } = useForm({
     defaultValues: {

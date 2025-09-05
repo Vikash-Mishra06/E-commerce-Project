@@ -32,7 +32,6 @@ const Products = () => {
 
   const DeleteHandler = (id) => {
     dispatch(asyncdeleteproduct(id));
-    navigate("/products");
     toast.success("Product Deleted");
   };
 
@@ -65,7 +64,7 @@ const Products = () => {
         </h1>
         <h1 className="text-xl pb-2 font-thin">
           <span className="text-red-400 font-medium">Description: </span>
-          {product.description.slice(0, 18)}...
+          {product.description.slice(0, 15)}...
         </h1>
         <p className="text-xl pb-2 font-thin">
           <span className="text-red-400 font-medium">Price: </span>$
